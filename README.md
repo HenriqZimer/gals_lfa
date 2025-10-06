@@ -193,7 +193,8 @@ Ação #2, Token: 5 ( 10 ) @ 8
 
 ## 👥 Autores
 
-- **Henrique Zimer** - Implementação e documentação
+- **Henrique Zimermann**
+- **Bernando Vannier**
 
 ## 📄 Licença
 
@@ -204,4 +205,5 @@ Este projeto foi desenvolvido como trabalho acadêmico para a disciplina de Ling
 ## 🔗 Links Úteis
 
 - [Documentação do GALS](http://gals.sourceforge.net/)
+
 - [Especificação do Trabalho](docs/Trabalho%20LFA%20M2.pdf)
