@@ -4,8 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-public class Semantico implements Constants
-{
+public class Semantico implements Constants {
     Stack<Integer> stack = new Stack();
     Map<String, Integer> vars = new HashMap<String, Integer>();
     String variavelAtual;
@@ -17,12 +16,12 @@ public class Semantico implements Constants
             case 1: //Empilha numeros
               stack.push(Integer.parseInt(token.getLexeme(), 2));
               break;
-            case 2://adição
+            case 2: //adição
               b = stack.pop();
               a = stack.pop();
               stack.push(new Integer(a.intValue() + b.intValue()));
               break;
-            case 3://multiplicação
+            case 3: //multiplicação
               b = stack.pop();
               a = stack.pop();
               stack.push(new Integer(a.intValue() * b.intValue()));
@@ -30,12 +29,12 @@ public class Semantico implements Constants
             case 4: //Empilha variavel
               stack.push(vars.get(token.getLexeme()));
               break;
-            case 5://subtração
+            case 5: //subtração
               b = stack.pop();
               a = stack.pop();
               stack.push(new Integer(a.intValue() - b.intValue()));
               break;            
-            case 6://divisão
+            case 6: //divisão
               b = stack.pop();
               a = stack.pop();
               stack.push(new Integer(a.intValue() / b.intValue()));
@@ -53,7 +52,7 @@ public class Semantico implements Constants
             case 9: //salva variavel e valor
               vars.put(variavelAtual, stack.pop());
               break;
-            case 10:    //variavel atual
+            case 10: //variavel atual
               variavelAtual = token.getLexeme();
               break;               
             case 11: //logaritmo
@@ -62,5 +61,5 @@ public class Semantico implements Constants
               stack.push(logResult.intValue());
               break;
         }
-    }	
-}
+    }
+  }
