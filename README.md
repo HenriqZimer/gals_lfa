@@ -159,38 +159,6 @@ Define a sintaxe da linguagem com:
 | #10  | Variável (lado esquerdo da atribuição) |
 | #11  | Operação de logaritmo |
 
-## 🔍 Saída Atual
-
-O programa atualmente exibe as ações semânticas sendo executadas:
-
-```
-=== Teste 1: Expressão com precedência ===
-Ação #10, Token: 4 ( B ) @ 0
-Ação #1, Token: 5 ( 1 ) @ 4
-Ação #1, Token: 5 ( 10 ) @ 8
-Ação #2, Token: 5 ( 10 ) @ 8
-...
-```
-
-## 🚧 Limitações Atuais
-
-- ✅ **Análise Léxica**: Completa e funcionando
-- ✅ **Análise Sintática**: Completa e funcionando  
-- ❌ **Análise Semântica**: Apenas trace das ações (interpretador não implementado)
-
-## 🎯 Próximos Passos
-
-1. **Implementar interpretador completo** no `Semantico.java`:
-   - Armazenar variáveis em HashMap
-   - Realizar cálculos binários
-   - Implementar todas as operações matemáticas
-   - Exibir resultados com o comando Show
-
-2. **Melhorar interface**:
-   - Adicionar modo interativo
-   - Leitura de arquivos de código
-   - Melhor tratamento de erros
-
 ## 👥 Autores
 
 - **Henrique Zimermann**
@@ -207,3 +175,4 @@ Este projeto foi desenvolvido como trabalho acadêmico para a disciplina de Ling
 - [Documentação do GALS](http://gals.sourceforge.net/)
 
 - [Especificação do Trabalho](docs/Trabalho%20LFA%20M2.pdf)
+
